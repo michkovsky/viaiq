@@ -10,11 +10,5 @@ namespace Coding.Tests
         {
             Assert.Equal(4,4);
         }
-        [Fact]
-        public void Test2()
-        {
-            Assert.Equal(4,2);
-
-        }
     }
 }
