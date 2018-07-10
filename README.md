@@ -1,8 +1,8 @@
-#viaiq
+# viaiq
 
 Proposed solution consists of three project files.
 
-##[Coding](./Coding)
+## [Coding](./Coding)
 
 This project contains C# part of implementation. It also act as a web-application which can be used to test solution.
 
@@ -17,12 +17,12 @@ docker build -t smi/viaiq-coding .
 docker run -p 8080:80 -p 8081:443 smi/viaiq-coding
 ```
 
-##[Coding.Tests](./Coding.Tests)
+## [Coding.Tests](./Coding.Tests)
 
 XUnit tests for C# code
 ```bash
 dotnet test
 ```
-##[Coding/ClientApp](./Coding/ClientApp)
+## [Coding/ClientApp](./Coding/ClientApp)
 
 Sub-project with javascript UI Do not start it separately.
