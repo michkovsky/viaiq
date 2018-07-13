@@ -1,3 +1,4 @@
+using Coding.ServiceClient;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,9 @@ namespace Coding
             {
                 configuration.RootPath = "ClientApp/build";
             });
+            services.AddSingleton(Configuration);
+            var url = Configuration.GetValue<string>("ugly-twitter-url");
+            services.AddSingleton((ITwitterUglyService)new TwitterUglyServiceClient(url));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
