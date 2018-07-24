@@ -14,7 +14,7 @@ export class FetchData extends Component {
   fetchTwitterData() {
     this.state.loading = true;
     this.setState(this.state);
-    var url=["api/TwitterData/GetTweets?startDate=",this.state.startDate,"&endDate=",this.state.endDate].join();
+    var url=["api/TwitterData/GetTweets?startDate=",this.state.startDate,"&endDate=",this.state.endDate].join("");
     fetch(url)
       .then(response => response.json())
       .then(data => {
