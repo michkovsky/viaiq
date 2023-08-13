@@ -12,7 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
     <PackageReference Include="NSwag.AspNetCore" Version="11.17.19" />
-    <PackageReference Include="NJsonSchema" Version="9.10.62" />
+    <PackageReference Include="NJsonSchema" Version="9.14.1" />
   </ItemGroup>
 
   <ItemGroup>
