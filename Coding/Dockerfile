@@ -11,7 +11,7 @@ COPY ./ ./
 
 RUN dotnet publish "./Coding.csproj" --output "./dist" --configuration Release --no-restore
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
 COPY --from=builder /source/dist .
 EXPOSE 80 443
